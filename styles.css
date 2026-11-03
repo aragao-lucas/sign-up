@@ -1,11 +1,12 @@
 body {
 background-color: white;
 text-align: center;
+
 }
 img {
-    width: 300px;
+    width: 500px;
     height: 600px;
-    background-color: grey;
+    background-color: lightskyblue;
 }
 #button1 {
     background-color: #80c246;
@@ -18,7 +19,7 @@ a {
     color: green;
 }
 #juntar {
-    display: flex 
+    display: flex;
 }
 #juntar2 {
     text-align: right;
