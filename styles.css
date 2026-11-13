@@ -76,7 +76,7 @@ a {
 
 .img-topo {
   position: absolute; /* Tira do fluxo normal e permite sobreposição */
-  top: 20px;          /* Distância do topo do contêiner */
-  left: 20px;         /* Distância da esquerda do contêiner */
-  width: 150px;       /* Tamanho da imagem que fica por cima */
+  top: 0px;          /* Distância do topo do contêiner */
+  left: 0px;         /* Distância da esquerda do contêiner */
+  width: 0px;       /* Tamanho da imagem que fica por cima */
 }
