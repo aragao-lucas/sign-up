@@ -8,7 +8,6 @@
 }
 
 body {
-background-color: white;
 text-align: center;
 
 }
@@ -29,9 +28,13 @@ a {
 }
 #juntar {
     display: flex;
+      width: 100vw;   /* 100% da largura da viewport */
+    height: 100vh;  /* 100% da altura da viewport */
 }
 #juntar2 {
     text-align: right;
+      width: 50vw;   /* 100% da largura da viewport */
+      height: 50vh;  /* 100% da altura da viewport */
 }
 
 .container-imagem .texto-centro {
@@ -53,9 +56,27 @@ a {
 .container-imagem img {
   display: block;
   width: 100%;
+  background-color: rgb(0 0 0 / 40%);
 }
 
 .texto-centro {
   font-family: 'Norsebold', sans-serif;
-  background-color: lightblue;
+}
+
+.container-imagem {
+  position: relative; /* Define o ponto de referência para os filhos */
+  width: 500px;       /* Ajuste para o tamanho da sua imagem */
+  display: inline-block;
+}
+
+.img-fundo {
+  width: 100%;        /* Faz a imagem de fundo ocupar todo o contêiner */
+  display: block;
+}
+
+.img-topo {
+  position: absolute; /* Tira do fluxo normal e permite sobreposição */
+  top: 20px;          /* Distância do topo do contêiner */
+  left: 20px;         /* Distância da esquerda do contêiner */
+  width: 150px;       /* Tamanho da imagem que fica por cima */
 }
